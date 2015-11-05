@@ -11,19 +11,18 @@ class Unit
 
   end 
 
-  def attack!(enemy)
 
-    enemy.damage(attack_power)
-  
+  def attack!(enemy)
+      enemy.damage(@attack_power)
   end
+
 
   def damage(amount)
-
-  
-    self.health_points -= amount
-
-  
+    @health_points -= amount
   end
 
-
+  def dead?
+    @health_points <= 0 ? true : false
+  end
+    
 end 
