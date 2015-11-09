@@ -1,12 +1,13 @@
 
 class Barracks
 
-  attr_reader :gold, :food, :health_points
+  attr_reader :gold, :food, :health_points, :lumber
 
-  def initialize(gold = 1000, food = 80, health_points = 500)
-    @gold = gold
-    @food = food
-    @health_points = health_points
+  def initialize
+    @gold = 1000
+    @food = 80
+    @health_points = 500
+    @lumber = 500
 
   end
 
